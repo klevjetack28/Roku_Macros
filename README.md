@@ -1,6 +1,6 @@
 # TV Remote Emulator
 
-The goal of the project is the emulate the TV remote's IR LED output to create macros to simplify already simple tasks.
+The goal of the project is the emulate the TV remote's IR LED payload commands. By completing this goal I hope to successfully reverse engineer each buttons communication and creating a personal television macro tool. This macro tool is capable of turning on your favorite TV shows by using the same repetitive button sequences you commonly input. 
 
 ## Parts
 
@@ -14,7 +14,11 @@ The goal of the project is the emulate the TV remote's IR LED output to create m
 
 This project had one goal in mind. The ability to create a macro for my TV to select a streaming service, Hulu, and go to my favorites to watch the current favorite show, Modern Family.
 
-I have had this goal in mind and it ended up being a very fun project. Just something silly  to put some of my engineering abilities to work. 
+Ever time I turn my TV on and want to stream a show in the background while I complete mundane tasks I like to turn on a comfort show of mine. I found I was always hitting the same, exact, sequence, of buttons each time I go to turn the TV on so I thought why not automate it?
+
+I chose to reverse engineer the remote because I wanted to learn something new and have always loved learning how things work. I knew how the TV and the Remote communicated you can see each of them blink in unison as you hit buttons on the remote. I thought, "There must be a way to record what it says and replicate that on an arduino." and that is where the project began.
+
+I set out with goals I wanted to accomplish not caring they were not the most optimal, but because I wanted to learn something new. I wanted to learn how to reverse engineer the remove, to simulate the remove on an ardunio. Those accomplish learning tasks with basic electronics and basic reverse engineering, two of my primary hobbies of interest. Later I tackle the more efficient solution to my problem by using their web API to communicate with the TV. The end result was what better than I imagined. I was able to learn to how reverse engineer the signal by reading the pulses at the specific frequency. I researched how these pulses are interpreted on the TV and wrote functions in python for parsing the pulse bit-data into a structured, readable, format I could simulate on an arduino. Later I run into an issue with the IR LED not recieving enough which required a special solution for my circuit,
 
 ## Step 1
 
